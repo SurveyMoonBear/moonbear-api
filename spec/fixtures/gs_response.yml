@@ -1,0 +1,734 @@
+---
+https://sheets.googleapis.com/v4/spreadsheets/1ItCeIVWgVRanDJ3vaZ7gd7ByuKC69Y5U8WLI-VP0sSA: !ruby/object:HTTP::Response
+  version: '1.1'
+  uri: !ruby/object:HTTP::URI
+    uri: !ruby/object:Addressable::URI
+      validation_deferred: false
+      scheme: https
+      host: sheets.googleapis.com
+      path: "/v4/spreadsheets/1ItCeIVWgVRanDJ3vaZ7gd7ByuKC69Y5U8WLI-VP0sSA"
+      authority: sheets.googleapis.com
+      uri_string: https://sheets.googleapis.com/v4/spreadsheets/1ItCeIVWgVRanDJ3vaZ7gd7ByuKC69Y5U8WLI-VP0sSA?key=AIzaSyBx-NV2jQjpaYtCFz2icQTKeBEpoC6C8V4
+      query: key=AIzaSyBx-NV2jQjpaYtCFz2icQTKeBEpoC6C8V4
+      password: 
+      user: 
+      port: 
+  status: !ruby/marshalable:HTTP::Response::Status
+    :__v2__:
+    - :@code
+    ? - 200
+    : 200
+  headers: !ruby/object:HTTP::Headers
+    pile:
+    - - Content-Type
+      - application/json; charset=UTF-8
+    - - Vary
+      - X-Origin
+    - - Vary
+      - Referer
+    - - Vary
+      - Origin,Accept-Encoding
+    - - Date
+      - Wed, 01 Nov 2017 16:49:30 GMT
+    - - Server
+      - ESF
+    - - Cache-Control
+      - private
+    - - X-Xss-Protection
+      - 1; mode=block
+    - - X-Frame-Options
+      - SAMEORIGIN
+    - - Alt-Svc
+      - quic=":443"; ma=2592000; v="41,39,38,37,35"
+    - - Accept-Ranges
+      - none
+    - - Connection
+      - close
+  proxy_headers: !ruby/object:HTTP::Headers
+    pile: []
+  content_type: !ruby/struct:HTTP::ContentType
+    mime_type: application/json
+    charset: UTF-8
+  body: !ruby/object:HTTP::Response::Body
+    stream: &1 !ruby/object:HTTP::Connection
+      persistent: false
+      keep_alive_timeout: 5.0
+      pending_request: false
+      pending_response: false
+      failed_proxy_connect: false
+      parser: !ruby/object:HTTP::Response::Parser
+        parser: !ruby/object:HTTP::Parser {}
+        finished: false
+        headers: 
+        chunk: 
+      socket: !ruby/object:HTTP::Timeout::Null
+        options: {}
+        socket: !ruby/object:OpenSSL::SSL::SSLSocket
+          context: !ruby/object:OpenSSL::SSL::SSLContext
+            verify_mode: 1
+            verify_hostname: true
+            cert_store: &2 !ruby/object:OpenSSL::X509::Store
+              verify_callback: 
+              error: 
+              error_string: 
+              chain: 
+              time: 
+          io: !ruby/object:TCPSocket {}
+          eof: false
+          rbuffer: ''
+          sync: true
+          hostname: sheets.googleapis.com
+          sync_close: true
+          wbuffer: ''
+      keep_alive: false
+    connection: *1
+    streaming: false
+    contents: |
+      {
+        "spreadsheetId": "1ItCeIVWgVRanDJ3vaZ7gd7ByuKC69Y5U8WLI-VP0sSA",
+        "properties": {
+          "title": "example survey spreadsheet",
+          "locale": "zh_TW",
+          "autoRecalc": "ON_CHANGE",
+          "timeZone": "Asia/Shanghai",
+          "defaultFormat": {
+            "backgroundColor": {
+              "red": 1,
+              "green": 1,
+              "blue": 1
+            },
+            "padding": {
+              "top": 2,
+              "right": 3,
+              "bottom": 2,
+              "left": 3
+            },
+            "verticalAlignment": "BOTTOM",
+            "wrapStrategy": "OVERFLOW_CELL",
+            "textFormat": {
+              "foregroundColor": {},
+              "fontFamily": "arial,sans,sans-serif",
+              "fontSize": 10,
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false
+            }
+          }
+        },
+        "sheets": [
+          {
+            "properties": {
+              "sheetId": 0,
+              "title": "sheet1",
+              "index": 0,
+              "sheetType": "GRID",
+              "gridProperties": {
+                "rowCount": 1000,
+                "columnCount": 26
+              }
+            },
+            "conditionalFormats": [
+              {
+                "ranges": [
+                  {
+                    "startRowIndex": 1,
+                    "endRowIndex": 17,
+                    "startColumnIndex": 1,
+                    "endColumnIndex": 2
+                  }
+                ],
+                "booleanRule": {
+                  "condition": {
+                    "type": "CUSTOM_FORMULA",
+                    "values": [
+                      {
+                        "userEnteredValue": "=REGEXMATCH(B2, \"\\W\")"
+                      }
+                    ]
+                  },
+                  "format": {
+                    "backgroundColor": {
+                      "red": 0.95686275,
+                      "green": 0.78039217,
+                      "blue": 0.7647059
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "properties": {
+              "sheetId": 1664538244,
+              "title": "10~20",
+              "index": 1,
+              "sheetType": "GRID",
+              "gridProperties": {
+                "rowCount": 1000,
+                "columnCount": 25
+              }
+            }
+          },
+          {
+            "properties": {
+              "sheetId": 1414185641,
+              "title": "21~25",
+              "index": 2,
+              "sheetType": "GRID",
+              "gridProperties": {
+                "rowCount": 1000,
+                "columnCount": 26
+              }
+            }
+          },
+          {
+            "properties": {
+              "sheetId": 2024425644,
+              "title": "26~30",
+              "index": 3,
+              "sheetType": "GRID",
+              "gridProperties": {
+                "rowCount": 1000,
+                "columnCount": 26
+              }
+            }
+          },
+          {
+            "properties": {
+              "sheetId": 242956353,
+              "title": "31~35",
+              "index": 4,
+              "sheetType": "GRID",
+              "gridProperties": {
+                "rowCount": 1000,
+                "columnCount": 26
+              }
+            }
+          }
+        ],
+        "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1ItCeIVWgVRanDJ3vaZ7gd7ByuKC69Y5U8WLI-VP0sSA/edit"
+      }
+    encoding: UTF-8
+'0': !ruby/object:HTTP::Response
+  version: '1.1'
+  uri: !ruby/object:HTTP::URI
+    uri: !ruby/object:Addressable::URI
+      validation_deferred: false
+      scheme: https
+      host: sheets.googleapis.com
+      path: "/v4/spreadsheets/1ItCeIVWgVRanDJ3vaZ7gd7ByuKC69Y5U8WLI-VP0sSA/values/sheet1"
+      authority: sheets.googleapis.com
+      uri_string: https://sheets.googleapis.com/v4/spreadsheets/1ItCeIVWgVRanDJ3vaZ7gd7ByuKC69Y5U8WLI-VP0sSA/values/sheet1?key=AIzaSyBx-NV2jQjpaYtCFz2icQTKeBEpoC6C8V4
+      query: key=AIzaSyBx-NV2jQjpaYtCFz2icQTKeBEpoC6C8V4
+      password: 
+      user: 
+      port: 
+  status: !ruby/marshalable:HTTP::Response::Status
+    :__v2__:
+    - :@code
+    ? - 200
+    : 200
+  headers: !ruby/object:HTTP::Headers
+    pile:
+    - - Content-Type
+      - application/json; charset=UTF-8
+    - - Vary
+      - X-Origin
+    - - Vary
+      - Referer
+    - - Vary
+      - Origin,Accept-Encoding
+    - - Date
+      - Wed, 01 Nov 2017 16:49:31 GMT
+    - - Server
+      - ESF
+    - - Cache-Control
+      - private
+    - - X-Xss-Protection
+      - 1; mode=block
+    - - X-Frame-Options
+      - SAMEORIGIN
+    - - Alt-Svc
+      - quic=":443"; ma=2592000; v="41,39,38,37,35"
+    - - Accept-Ranges
+      - none
+    - - Connection
+      - close
+  proxy_headers: !ruby/object:HTTP::Headers
+    pile: []
+  content_type: !ruby/struct:HTTP::ContentType
+    mime_type: application/json
+    charset: UTF-8
+  body: !ruby/object:HTTP::Response::Body
+    stream: &3 !ruby/object:HTTP::Connection
+      persistent: false
+      keep_alive_timeout: 5.0
+      pending_request: false
+      pending_response: false
+      failed_proxy_connect: false
+      parser: !ruby/object:HTTP::Response::Parser
+        parser: !ruby/object:HTTP::Parser {}
+        finished: false
+        headers: 
+        chunk: 
+      socket: !ruby/object:HTTP::Timeout::Null
+        options: {}
+        socket: !ruby/object:OpenSSL::SSL::SSLSocket
+          context: !ruby/object:OpenSSL::SSL::SSLContext
+            verify_mode: 1
+            verify_hostname: true
+            cert_store: *2
+          io: !ruby/object:TCPSocket {}
+          eof: false
+          rbuffer: ''
+          sync: true
+          hostname: sheets.googleapis.com
+          sync_close: true
+          wbuffer: ''
+      keep_alive: false
+    connection: *3
+    streaming: false
+    contents: |
+      {
+        "range": "sheet1!A1:Z1000",
+        "majorDimension": "ROWS",
+        "values": [
+          [
+            "Type",
+            "Name",
+            "Description",
+            "Required?",
+            "Options"
+          ],
+          [
+            "Title 1",
+            "hello%",
+            "Personal Information",
+            "1"
+          ],
+          [
+            "Short answer",
+            "name",
+            "What's your name?",
+            "0"
+          ],
+          [
+            "Multiple choice",
+            "age;num",
+            "How old are you?",
+            "1",
+            "10~20,21~25,26~30,31~35,36~40"
+          ],
+          [
+            "Paragraph",
+            "self_intro",
+            "Self Introduction",
+            "0"
+          ],
+          [
+            "",
+            "^&()"
+          ],
+          [
+            "Multipel choice grid"
+          ]
+        ]
+      }
+    encoding: UTF-8
+'1664538244': !ruby/object:HTTP::Response
+  version: '1.1'
+  uri: !ruby/object:HTTP::URI
+    uri: !ruby/object:Addressable::URI
+      validation_deferred: false
+      scheme: https
+      host: sheets.googleapis.com
+      path: "/v4/spreadsheets/1ItCeIVWgVRanDJ3vaZ7gd7ByuKC69Y5U8WLI-VP0sSA/values/10~20"
+      authority: sheets.googleapis.com
+      uri_string: https://sheets.googleapis.com/v4/spreadsheets/1ItCeIVWgVRanDJ3vaZ7gd7ByuKC69Y5U8WLI-VP0sSA/values/10~20?key=AIzaSyBx-NV2jQjpaYtCFz2icQTKeBEpoC6C8V4
+      query: key=AIzaSyBx-NV2jQjpaYtCFz2icQTKeBEpoC6C8V4
+      password: 
+      user: 
+      port: 
+  status: !ruby/marshalable:HTTP::Response::Status
+    :__v2__:
+    - :@code
+    ? - 200
+    : 200
+  headers: !ruby/object:HTTP::Headers
+    pile:
+    - - Content-Type
+      - application/json; charset=UTF-8
+    - - Vary
+      - X-Origin
+    - - Vary
+      - Referer
+    - - Vary
+      - Origin,Accept-Encoding
+    - - Date
+      - Wed, 01 Nov 2017 16:49:33 GMT
+    - - Server
+      - ESF
+    - - Cache-Control
+      - private
+    - - X-Xss-Protection
+      - 1; mode=block
+    - - X-Frame-Options
+      - SAMEORIGIN
+    - - Alt-Svc
+      - quic=":443"; ma=2592000; v="41,39,38,37,35"
+    - - Accept-Ranges
+      - none
+    - - Connection
+      - close
+  proxy_headers: !ruby/object:HTTP::Headers
+    pile: []
+  content_type: !ruby/struct:HTTP::ContentType
+    mime_type: application/json
+    charset: UTF-8
+  body: !ruby/object:HTTP::Response::Body
+    stream: &4 !ruby/object:HTTP::Connection
+      persistent: false
+      keep_alive_timeout: 5.0
+      pending_request: false
+      pending_response: false
+      failed_proxy_connect: false
+      parser: !ruby/object:HTTP::Response::Parser
+        parser: !ruby/object:HTTP::Parser {}
+        finished: false
+        headers: 
+        chunk: 
+      socket: !ruby/object:HTTP::Timeout::Null
+        options: {}
+        socket: !ruby/object:OpenSSL::SSL::SSLSocket
+          context: !ruby/object:OpenSSL::SSL::SSLContext
+            verify_mode: 1
+            verify_hostname: true
+            cert_store: *2
+          io: !ruby/object:TCPSocket {}
+          eof: false
+          rbuffer: ''
+          sync: true
+          hostname: sheets.googleapis.com
+          sync_close: true
+          wbuffer: ''
+      keep_alive: false
+    connection: *4
+    streaming: false
+    contents: |
+      {
+        "range": "'10~20'!A1:Y1000",
+        "majorDimension": "ROWS",
+        "values": [
+          [
+            "type",
+            "description",
+            "required",
+            "options"
+          ],
+          [
+            "Multipel choice grid",
+            "Are you usually happy?",
+            "1",
+            "1,2,3,4,5"
+          ]
+        ]
+      }
+    encoding: UTF-8
+'1414185641': !ruby/object:HTTP::Response
+  version: '1.1'
+  uri: !ruby/object:HTTP::URI
+    uri: !ruby/object:Addressable::URI
+      validation_deferred: false
+      scheme: https
+      host: sheets.googleapis.com
+      path: "/v4/spreadsheets/1ItCeIVWgVRanDJ3vaZ7gd7ByuKC69Y5U8WLI-VP0sSA/values/21~25"
+      authority: sheets.googleapis.com
+      uri_string: https://sheets.googleapis.com/v4/spreadsheets/1ItCeIVWgVRanDJ3vaZ7gd7ByuKC69Y5U8WLI-VP0sSA/values/21~25?key=AIzaSyBx-NV2jQjpaYtCFz2icQTKeBEpoC6C8V4
+      query: key=AIzaSyBx-NV2jQjpaYtCFz2icQTKeBEpoC6C8V4
+      password: 
+      user: 
+      port: 
+  status: !ruby/marshalable:HTTP::Response::Status
+    :__v2__:
+    - :@code
+    ? - 200
+    : 200
+  headers: !ruby/object:HTTP::Headers
+    pile:
+    - - Content-Type
+      - application/json; charset=UTF-8
+    - - Vary
+      - X-Origin
+    - - Vary
+      - Referer
+    - - Vary
+      - Origin,Accept-Encoding
+    - - Date
+      - Wed, 01 Nov 2017 16:49:34 GMT
+    - - Server
+      - ESF
+    - - Cache-Control
+      - private
+    - - X-Xss-Protection
+      - 1; mode=block
+    - - X-Frame-Options
+      - SAMEORIGIN
+    - - Alt-Svc
+      - quic=":443"; ma=2592000; v="41,39,38,37,35"
+    - - Accept-Ranges
+      - none
+    - - Connection
+      - close
+  proxy_headers: !ruby/object:HTTP::Headers
+    pile: []
+  content_type: !ruby/struct:HTTP::ContentType
+    mime_type: application/json
+    charset: UTF-8
+  body: !ruby/object:HTTP::Response::Body
+    stream: &5 !ruby/object:HTTP::Connection
+      persistent: false
+      keep_alive_timeout: 5.0
+      pending_request: false
+      pending_response: false
+      failed_proxy_connect: false
+      parser: !ruby/object:HTTP::Response::Parser
+        parser: !ruby/object:HTTP::Parser {}
+        finished: false
+        headers: 
+        chunk: 
+      socket: !ruby/object:HTTP::Timeout::Null
+        options: {}
+        socket: !ruby/object:OpenSSL::SSL::SSLSocket
+          context: !ruby/object:OpenSSL::SSL::SSLContext
+            verify_mode: 1
+            verify_hostname: true
+            cert_store: *2
+          io: !ruby/object:TCPSocket {}
+          eof: false
+          rbuffer: ''
+          sync: true
+          hostname: sheets.googleapis.com
+          sync_close: true
+          wbuffer: ''
+      keep_alive: false
+    connection: *5
+    streaming: false
+    contents: |
+      {
+        "range": "'21~25'!A1:Z1000",
+        "majorDimension": "ROWS",
+        "values": [
+          [
+            "type",
+            "description",
+            "required",
+            "options"
+          ],
+          [
+            "Multipel choice grid",
+            "Are you usually happy?",
+            "1",
+            "1,2,3,4,5"
+          ]
+        ]
+      }
+    encoding: UTF-8
+'2024425644': !ruby/object:HTTP::Response
+  version: '1.1'
+  uri: !ruby/object:HTTP::URI
+    uri: !ruby/object:Addressable::URI
+      validation_deferred: false
+      scheme: https
+      host: sheets.googleapis.com
+      path: "/v4/spreadsheets/1ItCeIVWgVRanDJ3vaZ7gd7ByuKC69Y5U8WLI-VP0sSA/values/26~30"
+      authority: sheets.googleapis.com
+      uri_string: https://sheets.googleapis.com/v4/spreadsheets/1ItCeIVWgVRanDJ3vaZ7gd7ByuKC69Y5U8WLI-VP0sSA/values/26~30?key=AIzaSyBx-NV2jQjpaYtCFz2icQTKeBEpoC6C8V4
+      query: key=AIzaSyBx-NV2jQjpaYtCFz2icQTKeBEpoC6C8V4
+      password: 
+      user: 
+      port: 
+  status: !ruby/marshalable:HTTP::Response::Status
+    :__v2__:
+    - :@code
+    ? - 200
+    : 200
+  headers: !ruby/object:HTTP::Headers
+    pile:
+    - - Content-Type
+      - application/json; charset=UTF-8
+    - - Vary
+      - X-Origin
+    - - Vary
+      - Referer
+    - - Vary
+      - Origin,Accept-Encoding
+    - - Date
+      - Wed, 01 Nov 2017 16:49:35 GMT
+    - - Server
+      - ESF
+    - - Cache-Control
+      - private
+    - - X-Xss-Protection
+      - 1; mode=block
+    - - X-Frame-Options
+      - SAMEORIGIN
+    - - Alt-Svc
+      - quic=":443"; ma=2592000; v="41,39,38,37,35"
+    - - Accept-Ranges
+      - none
+    - - Connection
+      - close
+  proxy_headers: !ruby/object:HTTP::Headers
+    pile: []
+  content_type: !ruby/struct:HTTP::ContentType
+    mime_type: application/json
+    charset: UTF-8
+  body: !ruby/object:HTTP::Response::Body
+    stream: &6 !ruby/object:HTTP::Connection
+      persistent: false
+      keep_alive_timeout: 5.0
+      pending_request: false
+      pending_response: false
+      failed_proxy_connect: false
+      parser: !ruby/object:HTTP::Response::Parser
+        parser: !ruby/object:HTTP::Parser {}
+        finished: false
+        headers: 
+        chunk: 
+      socket: !ruby/object:HTTP::Timeout::Null
+        options: {}
+        socket: !ruby/object:OpenSSL::SSL::SSLSocket
+          context: !ruby/object:OpenSSL::SSL::SSLContext
+            verify_mode: 1
+            verify_hostname: true
+            cert_store: *2
+          io: !ruby/object:TCPSocket {}
+          eof: false
+          rbuffer: ''
+          sync: true
+          hostname: sheets.googleapis.com
+          sync_close: true
+          wbuffer: ''
+      keep_alive: false
+    connection: *6
+    streaming: false
+    contents: |
+      {
+        "range": "'26~30'!A1:Z1000",
+        "majorDimension": "ROWS",
+        "values": [
+          [
+            "type",
+            "description",
+            "required",
+            "options"
+          ],
+          [
+            "Multipel choice grid",
+            "Are you usually happy?",
+            "1",
+            "1,2,3,4,5"
+          ]
+        ]
+      }
+    encoding: UTF-8
+'242956353': !ruby/object:HTTP::Response
+  version: '1.1'
+  uri: !ruby/object:HTTP::URI
+    uri: !ruby/object:Addressable::URI
+      validation_deferred: false
+      scheme: https
+      host: sheets.googleapis.com
+      path: "/v4/spreadsheets/1ItCeIVWgVRanDJ3vaZ7gd7ByuKC69Y5U8WLI-VP0sSA/values/31~35"
+      authority: sheets.googleapis.com
+      uri_string: https://sheets.googleapis.com/v4/spreadsheets/1ItCeIVWgVRanDJ3vaZ7gd7ByuKC69Y5U8WLI-VP0sSA/values/31~35?key=AIzaSyBx-NV2jQjpaYtCFz2icQTKeBEpoC6C8V4
+      query: key=AIzaSyBx-NV2jQjpaYtCFz2icQTKeBEpoC6C8V4
+      password: 
+      user: 
+      port: 
+  status: !ruby/marshalable:HTTP::Response::Status
+    :__v2__:
+    - :@code
+    ? - 200
+    : 200
+  headers: !ruby/object:HTTP::Headers
+    pile:
+    - - Content-Type
+      - application/json; charset=UTF-8
+    - - Vary
+      - X-Origin
+    - - Vary
+      - Referer
+    - - Vary
+      - Origin,Accept-Encoding
+    - - Date
+      - Wed, 01 Nov 2017 16:49:35 GMT
+    - - Server
+      - ESF
+    - - Cache-Control
+      - private
+    - - X-Xss-Protection
+      - 1; mode=block
+    - - X-Frame-Options
+      - SAMEORIGIN
+    - - Alt-Svc
+      - quic=":443"; ma=2592000; v="41,39,38,37,35"
+    - - Accept-Ranges
+      - none
+    - - Connection
+      - close
+  proxy_headers: !ruby/object:HTTP::Headers
+    pile: []
+  content_type: !ruby/struct:HTTP::ContentType
+    mime_type: application/json
+    charset: UTF-8
+  body: !ruby/object:HTTP::Response::Body
+    stream: &7 !ruby/object:HTTP::Connection
+      persistent: false
+      keep_alive_timeout: 5.0
+      pending_request: false
+      pending_response: false
+      failed_proxy_connect: false
+      parser: !ruby/object:HTTP::Response::Parser
+        parser: !ruby/object:HTTP::Parser {}
+        finished: false
+        headers: 
+        chunk: 
+      socket: !ruby/object:HTTP::Timeout::Null
+        options: {}
+        socket: !ruby/object:OpenSSL::SSL::SSLSocket
+          context: !ruby/object:OpenSSL::SSL::SSLContext
+            verify_mode: 1
+            verify_hostname: true
+            cert_store: *2
+          io: !ruby/object:TCPSocket {}
+          eof: false
+          rbuffer: ''
+          sync: true
+          hostname: sheets.googleapis.com
+          sync_close: true
+          wbuffer: ''
+      keep_alive: false
+    connection: *7
+    streaming: false
+    contents: |
+      {
+        "range": "'31~35'!A1:Z1000",
+        "majorDimension": "ROWS",
+        "values": [
+          [
+            "type",
+            "description",
+            "required",
+            "options"
+          ],
+          [
+            "Multipel choice grid",
+            "Are you usually happy?",
+            "1",
+            "1,2,3,4,5"
+          ]
+        ]
+      }
+    encoding: UTF-8

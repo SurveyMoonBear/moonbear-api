@@ -1,0 +1,60 @@
+---
+title: example survey spreadsheet
+survey_url: https://docs.google.com/spreadsheets/d/1ItCeIVWgVRanDJ3vaZ7gd7ByuKC69Y5U8WLI-VP0sSA/edit
+pages:
+- id: 0
+  title: sheet1
+  index: 0
+  values:
+  - - Title 1
+    - hello%
+    - Personal Information
+    - '1'
+  - - Short answer
+    - name
+    - What's your name?
+    - '0'
+  - - Multiple choice
+    - age;num
+    - How old are you?
+    - '1'
+    - 10~20,21~25,26~30,31~35,36~40
+  - - Paragraph
+    - self_intro
+    - Self Introduction
+    - '0'
+  - - ''
+    - "^&()"
+  - - Multipel choice grid
+- id: 1664538244
+  title: 10~20
+  index: 1
+  values:
+  - - Multipel choice grid
+    - Are you usually happy?
+    - '1'
+    - '1,2,3,4,5'
+- id: 1414185641
+  title: 21~25
+  index: 2
+  values:
+  - - Multipel choice grid
+    - Are you usually happy?
+    - '1'
+    - '1,2,3,4,5'
+- id: 2024425644
+  title: 26~30
+  index: 3
+  values:
+  - - Multipel choice grid
+    - Are you usually happy?
+    - '1'
+    - '1,2,3,4,5'
+- id: 242956353
+  title: 31~35
+  index: 4
+  values:
+  - - Multipel choice grid
+    - Are you usually happy?
+    - '1'
+    - '1,2,3,4,5'
